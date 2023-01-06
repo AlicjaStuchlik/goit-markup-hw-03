@@ -114,6 +114,7 @@ body {
   height: 600px;
   padding: 94px;
 }
+
 .main-headline-item {
   font-size: 44px;
   font-weight: 900;
@@ -176,12 +177,14 @@ color: var(--primary-color);
 
 .our-team {   /* nasz zespól background color*/
   background-color: var(--second-background-color);
+
 }
 .our-team-card {
   list-style: none;
   display: flex;
   gap: 30px;
 }
+
 
 .our-team-header {  /* nasz zespół header */
 color: var(--primary-color);
