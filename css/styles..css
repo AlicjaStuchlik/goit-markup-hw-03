@@ -16,72 +16,74 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-
-
 .container {   /* all divs */
   max-width: 1200px;
   margin: 0 auto;
 }
-
-.page-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  
-}
 .section {
   padding: 94px 0;
-  padding: 32px 0;
 }
 
-
-.header-navigation,
-.header-menu,
-.header-menu-item,
-.header-contact-list {
+.header-container {
   display: flex;
-}
-
-
-
-  
-
-  
-
-
-
-
-.header-link,  /* header menu */
-.contact-link,
-.header-logo {
-  text-decoration: none
-}
-
-.contact-list {
-  display: flex;
-  align-items: center;
- }
-
-
- 
-
-    .header-menu-item,  /* contact list in header with no bulletpoint */
-    .header-contact-list {
-     list-style: none;
+  height: 80px;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
   }
 
-  
- 
+.header-menu {
+ display: flex;
+ align-items: center;
+ }
 
+ .header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+ }
+
+ .header-link,  /* header menu */
+  .contact-link,
+  .header-logo {
+    text-decoration: none
+  }
+
+  .header-menu >.header-menu-item:not(:last-child) {
+    margin-right: 40px;
+   }
   
-.header-logo {
-  font-family: var(--logo-font);
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.38;
-  color: var(--logo-studio-color);
+   .contact-list >.header-contact-list:not(:last-child) {
+    margin-right: 40px;
+   }
+ 
+ .contact-list {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+  margin: 0px;
+ }
+
+ .header-menu-item,  /* contact list in header with no bulletpoint */
+ .header-contact-list {
+  list-style: none;
 }
 
+  .header-logo {
+    margin-right: 93px;
+  }
+
+  .header-logo,
+  .link-footer-logo{
+    font-family: var(--logo-font);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    justify-content: center;
+    color: var(--logo-studio-color);
+  }
+ 
  .logo-first {  /*logo webstudio first blue part */
   color: var(--span-logo-color);
   margin-top: 24px;
@@ -110,9 +112,10 @@ body {
 
 .main-headline {  /* header main heading and button */
   text-align: center;
+  display: flex;
   background-color: var(--dark-background-color);
   height: 600px;
-  padding: 94px;
+  padding: 94px 0px;
 }
 
 .main-headline-item {
@@ -163,6 +166,7 @@ font-size: 36px;
 font-weight: 700;
 line-height: 1.17;
 text-align: center;
+margin-bottom: 50px;
 color: var(--primary-color);
  }
 
@@ -179,11 +183,6 @@ color: var(--primary-color);
   background-color: var(--second-background-color);
 
 }
-.our-team-card {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
 
 
 .our-team-header {  /* nasz zespół header */
@@ -192,10 +191,27 @@ font-size: 36px;
 font-weight: 700;
 line-height: 1.17;
 text-align: center;
+margin-bottom: 50px;
+padding-top: 94px;
 }
 
 .our-team-header::first-letter {
 text-transform: uppercase;
+}
+
+.our-team-card {
+  list-style: none;
+  display: flex;
+  max-width: 270px;
+  height: 368px;
+  gap: 30px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-card-item {
+  border-radius: 0px 0px 4px 4px;
+  background: #FFFFFF;
+  
 }
 
 .our-team-name {  /*john doe name card */
@@ -204,6 +220,7 @@ text-transform: uppercase;
   font-weight: 500;
   line-height: 1.17;
   text-transform: capitalize;
+  padding bottom: 10px;
 }
 
 .our-team-description {  /*john doe profession */
@@ -213,6 +230,12 @@ font-weight: 400;
 line-height: 1.12;
 text-transform: capitalize;
 }
+
+.our-team-name,
+.our-team-description {
+  text-align: center;
+}
+
 .footer {
   background-color: var(--dark-background-color);
 }
@@ -225,19 +248,27 @@ text-transform: capitalize;
   line-height: 1.19;
   letter-spacing:0.03em;
   text-decoration: none;
-  padding-left: 215px;
   padding-top: 60px;
-  
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
 .logo-first {
   color: var(--span-logo-color);
+  
 }
   .footer-contact {
     list-style:none;
-    padding-left: 215px;
-    padding-top: 20px;
+    padding-bottom: 60px;
+    display: inline-block;
+    
   }
+   
+  .footer-container {
+    max-width: 1200px;
+  margin: 0px auto;
+  }
+  
   .footer-address {
     color: var(--thirt-color);
     font-style: normal;
