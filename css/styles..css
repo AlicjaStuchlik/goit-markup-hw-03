@@ -30,6 +30,7 @@ body {
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1200px;
+  border-bottom: 1px solid #ECECEC;
   }
 
 .header-menu {
@@ -70,19 +71,19 @@ body {
   list-style: none;
 }
 
-  .header-logo {
-    margin-right: 93px;
-  }
 
-  .header-logo,
-  .link-footer-logo{
+  .header-logo {
     font-family: var(--logo-font);
     font-size: 26px;
     font-weight: 700;
     line-height: 1.38;
     justify-content: center;
+    margin-right: 93px;
     color: var(--logo-studio-color);
   }
+ 
+   
+  
  
  .logo-first {  /*logo webstudio first blue part */
   color: var(--span-logo-color);
@@ -153,6 +154,7 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
+  margin-bottom: 10px;
   text-transform: uppercase
 }
 
@@ -181,6 +183,7 @@ color: var(--primary-color);
 
 .our-team {   /* nasz zespól background color*/
   background-color: var(--second-background-color);
+  
 
 }
 
@@ -205,13 +208,16 @@ text-transform: uppercase;
   max-width: 270px;
   height: 368px;
   gap: 30px;
-  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  
+
 }
 
 .our-team-card-item {
   border-radius: 0px 0px 4px 4px;
-  background: #FFFFFF;
-  
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+   0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
 }
 
 .our-team-name {  /*john doe name card */
@@ -220,7 +226,10 @@ text-transform: uppercase;
   font-weight: 500;
   line-height: 1.17;
   text-transform: capitalize;
-  padding bottom: 10px;
+  padding-top: 30;
+  padding -bottom: 10px;
+  padding-right:99px;
+  padding-left:99px;
 }
 
 .our-team-description {  /*john doe profession */
@@ -231,13 +240,18 @@ line-height: 1.12;
 text-transform: capitalize;
 }
 
-.our-team-name,
-.our-team-description {
-  text-align: center;
-}
-
 .footer {
   background-color: var(--dark-background-color);
+  
+}
+
+.footer-container {
+  max-width: 1200px;
+  height: 252px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px auto;
 }
 
 .link-footer-logo {
@@ -248,36 +262,36 @@ text-transform: capitalize;
   line-height: 1.19;
   letter-spacing:0.03em;
   text-decoration: none;
-  padding-top: 60px;
   margin-bottom: 20px;
   display: inline-block;
+ 
+}
+
+.footer-details {
+  list-style: none;
+}
+
+.footer-contact-item {
+  margin-top: 9px;
 }
 
 .logo-first {
   color: var(--span-logo-color);
-  
 }
-  .footer-contact {
-    list-style:none;
-    padding-bottom: 60px;
-    display: inline-block;
-    
-  }
-   
-  .footer-container {
-    max-width: 1200px;
-  margin: 0px auto;
-  }
   
+   
   .footer-address {
     color: var(--thirt-color);
     font-style: normal;
     font-size: 14px;
     font-weight: 400;
   }
+
   .link-footer {
     color: #FFFFFF99;
+    text-decoration: none;
   }
+
 
 .list,  /* portfolio website  buttons section as header is the same*/
 .card {
