@@ -183,8 +183,8 @@ color: var(--primary-color);
 
 .our-team {   /* nasz zespól background color*/
   background-color: var(--second-background-color);
-  
-
+  list-style: none;
+  padding: 94px 0; 
 }
 
 
