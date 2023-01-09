@@ -25,6 +25,7 @@ body {
   padding:94px 0;
 }
 
+
 .header-container {
   display: flex;
   height: 80px;
@@ -338,10 +339,10 @@ cursor: pointer;
 
 .card-container {
   max-width: 1200px;
-  padding: 0px;
   margin: 0px auto;
   
 }
+
 
 .image-card {
   display: flex;
