@@ -146,6 +146,7 @@ body {
   display: flex;
   gap:30px;
 }
+
 .our-advantages-item {
   list-style: none;
 }
@@ -211,8 +212,6 @@ text-transform: uppercase;
   height: 368px;
   gap: 30px;
   text-align: center;
-  
-
 }
 
 .our-team-card-item {
@@ -244,7 +243,6 @@ text-transform: capitalize;
 
 .footer {
   background-color: var(--dark-background-color);
-  
 }
 
 .footer-container {
@@ -266,7 +264,6 @@ text-transform: capitalize;
   text-decoration: none;
   margin-bottom: 20px;
   display: inline-block;
- 
 }
 
 .footer-details {
@@ -281,7 +278,6 @@ text-transform: capitalize;
   color: var(--span-logo-color);
 }
   
-   
   .footer-address {
     color: var(--thirt-color);
     font-size: 14px;
@@ -362,7 +358,7 @@ cursor: pointer;
 }
 .image-list-name {
   font-size: 18px;
-  padding-bottom: 3px;
+  padding-bottom: 4px;
 }
 
 .image-list {
