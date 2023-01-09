@@ -9,6 +9,7 @@
   --logo-studio-color: #000000;
   --span-logo-color: #2196F3; /* color for webstudio and hover */
   --thirt-color: #FFFFFF; /*color for main headline and button text inside */
+  --forth-color: #EEEEEE;
 }
 body {
   font-family: var(--primary-font);
@@ -18,10 +19,10 @@ body {
 }
 .container {   /* all divs */
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 .section {
-  padding: 94px 0;
+  padding:94px 0;
 }
 
 .header-container {
@@ -48,7 +49,7 @@ body {
  .header-link,  /* header menu */
   .contact-link,
   .header-logo {
-    text-decoration: none
+  text-decoration: none;
   }
 
   .header-menu >.header-menu-item:not(:last-child) {
@@ -143,7 +144,7 @@ body {
 
 .our-advantages {
   display: flex;
-   gap: 30px;
+  gap:30px;
 }
 .our-advantages-item {
   list-style: none;
@@ -155,12 +156,13 @@ body {
   font-weight: 700;
   line-height: 1.14;
   margin-bottom: 10px;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 .advantages-paragraph {  /*lorem ipsum paragraph description */
 font-weight: 400;
 line-height: 1.71;
+color: var(--secondary-color);
  }
 
  .what-we-do-title {  /* czym sie zajmujemy title */
@@ -227,7 +229,7 @@ text-transform: uppercase;
   line-height: 1.17;
   text-transform: capitalize;
   padding-top: 30;
-  padding -bottom: 10px;
+  padding-bottom: 10px;
   padding-right:99px;
   padding-left:99px;
 }
@@ -282,9 +284,12 @@ text-transform: capitalize;
    
   .footer-address {
     color: var(--thirt-color);
-    font-style: normal;
     font-size: 14px;
     font-weight: 400;
+  }
+
+  .address-location {
+    font-style: normal;
   }
 
   .link-footer {
@@ -292,38 +297,90 @@ text-transform: capitalize;
     text-decoration: none;
   }
 
+  /* portfolio website  buttons section as header is the same*/
+  .filters-container {
+    max-width: 1200px;
+    padding: 94px 0px 24px 0px;
+    margin: 0px auto;
+  }
 
-.list,  /* portfolio website  buttons section as header is the same*/
-.card {
-  list-style: none;
-} 
+  .list-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 
-.list-button {  /*buttons in main section */
+  .filter-button:not(:last-child) {
+    margin-right: 8px;
+  }
+
+.button-header {  /*buttons in main section */
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
   background-color: var(--second-background-color);
   text-align: center;
-  cursor: pointer;
   letter-spacing: 0.03em;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px 6px 22px; 
 }
 
-.list-button:focus,  /*button pseudoclasses */
-.list-button:hover
-.list-button:active {
-  color: var(--thirt-color);
-  background-color: var(--span-logo-color);
+.button-header:focus,  /*button pseudoclasses */
+.button-header:hover,
+.button-header:active {
+color: var(--thirt-color);
+background-color: var(--span-logo-color);
+cursor: pointer;
+}
+ .filter-button, 
+ .image-card {
+  list-style: none;
+ }
+
+/* filter cards */
+
+.card-container {
+  max-width: 1200px;
+  padding: 0px;
+  margin: 0px auto;
+  
+}
+
+.image-card {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0%;
+  gap: 30px;
+  list-style: none;
+}
+
+.image-list-description {
+  color: #757575;
+  font-size: 16px;
+  padding-bottom: 20px;
 }
 .image-list-name {
   font-size: 18px;
-  font-weight: 700;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--primary-color);
+  padding-bottom: 3px;
 }
+
+.image-list {
+  margin: 0%;
+  padding: 0%;
+  max-width: 370px;
+  max-height: 404px;
+  border-left: 1px solid var(--forth-color);
+  border-bottom: 1px solid var(--forth-color);
+  border-right: 1px solid  var(--forth-color);
+  flex-basis: calc((100% - 2 * 30px) / 3);
+}
+
+.image-list-name,
 .image-list-description {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.87;
-  color: var(--secondary-color);
+  padding-left: 24px;
 }
+
+
+
+
