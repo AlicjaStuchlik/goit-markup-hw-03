@@ -354,16 +354,18 @@ cursor: pointer;
 .image-list-description {
   color: #757575;
   font-size: 16px;
-  padding-bottom: 20px;
+  line-height: 1.875;
 }
 .image-list-name {
   font-size: 18px;
   padding-bottom: 4px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
 }
 
 .image-list {
-  margin: 0%;
-  padding: 0%;
   max-width: 370px;
   max-height: 404px;
   border-left: 1px solid var(--forth-color);
