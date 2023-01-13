@@ -236,6 +236,11 @@ header nav {
   background-color: #ffffff;
 }
 
+.our-team-card-content {
+padding: 30px 0;
+}
+
+
 .our-team-name {
   /*john doe name card */
   color: var(--primary-color);
@@ -243,10 +248,6 @@ header nav {
   font-weight: 500;
   line-height: 1.17;
   text-transform: capitalize;
-  padding-top: 30px;
-  padding-bottom: 10px;
-  padding-right: 99px;
-  padding-left: 99px;
 }
 
 .our-team-description {
@@ -256,7 +257,7 @@ header nav {
   font-weight: 400;
   line-height: 1.12;
   text-transform: capitalize;
-  padding-bottom: 30px;
+  margin-top: 10px
 }
 
 .footer {
